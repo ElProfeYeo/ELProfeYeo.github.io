@@ -142,6 +142,7 @@ body {
   display: grid;
   align-items: center;
   align-content: center;
+  justify-content: center;
 }
 /* Media Queries actualizados */
 @media screen and (min-width: 0px) and (max-width: 375px) {
