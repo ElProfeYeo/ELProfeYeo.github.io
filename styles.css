@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+  margin: 0;
+  height: 100vh; /* Asegúrate de que el body ocupe toda la altura de la ventana */
+  display: grid; /* Usa CSS Grid para centrar */
+  place-items: center; /* Centra horizontal y verticalmente */
+}
+.main-container {
+ background: radial-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+  width: 375px;
+  justify-items: center; /* Alinear hijos a la izquierda */
+  align-items: center; /* Alinear hijos al centro verticalmente */
+  border-radius: 20px;
+}
+.main-container {
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+.image-container {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: hsl(218, 22%, 17%);
+  width: 40px;
+  height: 40px;
+  margin: 0; /* Eliminar el centrado */
+  justify-self: start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.main-container p {
+  font-size: 15x;
+  color: hsl(217, 12%, 63%);
+  margin: 0;
+}
+.main-container > div:nth-child(2) {
+  justify-self: start; /* Alinear el segundo hijo a la izquierda */
+}
+/* Contenedor de botones */
+.main-container .rating-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-container .rating-container button{
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: hsl(218, 22%, 17%);
+  cursor: pointer;          /* Usamos grid en lugar de flex */
+  color: hsl(0, 0%, 100%);
+  text-align: center;      /* Aseguramos que el texto esté centrado */
+}
+.main-container .rating-container button:hover {
+  background: hsl(25, 97%, 53%);  /* Cambiamos background-color por background */
+  color: hsl(0, 0%, 0%);
+}
+.main-container .Submit-button {
+  width: 90%;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+.main-container .Submit-button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+}
+
+.main-container .image-ilustracion {
+  border: 1px solid transparent;
+  width: auto;
+  height: auto;
+  margin: 0; /* Eliminar el centrado */
+  justify-self: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.selected .numero-rating {
+  width: fit-content;    
+  height: auto;          /* Cambiamos fit-content por auto */
+  border: 1px solid transparent;
+  border-radius: 15px;
+  background-color: hsl(218, 22%, 17%);
+  font-size: 10px;
+  color: hsl(25, 97%, 53%);
+  display: grid;           /* Añadimos display grid */
+  place-items: center;     /* Ahora sí funcionará el centrado */
+  margin: 0 auto;        /* Centra horizontalmente */
+  padding: 0.3rem 1rem;  /* Reducimos el padding vertical */
+  justify-self: center;  /* Centra en el grid del padre */
+}
+
+/* Ajustamos también el h2 dentro de numero-rating para mejor control del espaciado */
+.selected .numero-rating h2 {
+  margin: 0;
+  line-height: 1.5;     /* Ajustamos la altura de línea */
+}
+
+.selected .gracias {
+  font-size: 20px;
+  color: hsl(0, 0%, 100%);
+  text-align: center;  /* Centrar el texto */
+  margin: 0;          /* Eliminar márgenes por defecto */
+}
+.selected p {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  text-align: center;  /* Centrar el texto */
+  margin: 0;          /* Eliminar márgenes por defecto */
+}
+/* Asegúrate de que el contenedor padre tenga estas propiedades */
+.main-container.selected {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+  display: none;
+}
+.container {
+  width: 90%;
+  height: 70%;
+  background-color:  hsl(216, 12%, 8%);
+  display: grid;
+  align-items: center;
+  align-content: center;
+}
