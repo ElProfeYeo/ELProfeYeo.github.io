@@ -40,7 +40,7 @@ body {
   align-items: center;
 }
 .main-container p {
-  font-size: 15x;
+  font-size: 15px;
   color: hsl(217, 12%, 63%);
   margin: 0;
 }
